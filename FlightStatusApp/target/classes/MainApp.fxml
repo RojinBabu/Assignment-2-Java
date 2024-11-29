@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.rojin.flightstatus.MainApp" spacing="10" alignment="CENTER" style="-fx-background-color: linear-gradient(to bottom, #2193b0, #6dd5ed); -fx-padding: 20;">
+    <!-- Home Screen -->
+    <ImageView fx:id="planeImage" fitWidth="200" preserveRatio="true" />
+    <Label fx:id="welcomeLabel" text="Welcome to the Flight Status App!"
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" />
+    <Button fx:id="startButton" text="Get Started"
+            style="-fx-font-size: 18px; -fx-background-color: #FF7F50; -fx-text-fill: white; -fx-padding: 10 20;" />
+
+    <!-- Search Screen (Initially Hidden) -->
+    <VBox fx:id="searchScreen" spacing="10" visible="false" style="-fx-padding: 20;">
+        <Label fx:id="instructionLabel" text="Available Flights:" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+        <ListView fx:id="flightListView" prefHeight="400" />
+        <Button fx:id="searchButton" text="Show Available Flights"
+                style="-fx-font-size: 16px; -fx-background-color: #32CD32; -fx-text-fill: white; -fx-padding: 8 16;" />
+        <Button fx:id="backButton" text="Back"
+                style="-fx-font-size: 16px; -fx-background-color: #FF4500; -fx-text-fill: white; -fx-padding: 8 16;" />
+    </VBox>
+
+    <!-- Flight Details (Initially Hidden) -->
+    <VBox fx:id="flightDetailsScreen" spacing="10" visible="false" style="-fx-padding: 20;">
+        <Label fx:id="flightDetailsLabel" style="-fx-font-size: 14px;" />
+        <Button fx:id="closeButton" text="Close" style="-fx-font-size: 14px;" />
+    </VBox>
+</VBox>

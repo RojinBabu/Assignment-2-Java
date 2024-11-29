@@ -1,0 +1,39 @@
+/* Set a background color for the whole scene */
+.root {
+    -fx-background-color: #f4f4f9;
+    -fx-font-family: Arial, sans-serif;
+}
+
+/* Style for the main label */
+.label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+/* Style for the button */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 15px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Style for the VBox (vertical container) */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-padding: 40px;
+}
+
+/* Style for the scene and overall layout */
+.scene {
+    -fx-font-size: 14px;
+}
